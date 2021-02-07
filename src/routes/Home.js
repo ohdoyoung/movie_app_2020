@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
-import './Home.css'
+import "./Home.css";
 
 class Home extends React.Component {
   state = {
@@ -35,7 +35,7 @@ class Home extends React.Component {
             <span className="loader__text">Loading...</span>
           </div>
         ) : (
-          <div classname="movies">
+          <div className="movies">
             {movies.map((movie) => (
               <Movie
                 key={movie.id}
